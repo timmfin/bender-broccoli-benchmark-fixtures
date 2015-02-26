@@ -1,0 +1,28 @@
+{
+  "mode": "development",
+  "staticDomain": null,
+  "staticDomainPrefix": "",
+  "nonCDNstaticDomain": "hubspot-static2cdn.s3.amazonaws.com",
+  "nonCDNstaticDomainPrefix": "//hubspot-static2cdn.s3.amazonaws.com",
+  "archivePath": "/Users/tfinley/.hubspot/static-archive/",
+  "servedProjects": {
+    "TonsOfSmallSassFilesViaNodeSass": {
+      "project": "TonsOfSmallSassFilesViaNodeSass",
+      "depVersions": {
+        "TonsOfSmallSassFilesViaNodeSass": "static"
+      },
+      "depPaths": {
+        "TonsOfSmallSassFilesViaNodeSass": "/Users/tfinley/src/bender-broccoli-benchmark-fixtures/TonsOfSmallSassFilesViaNodeSass/static"
+      },
+      "denormalizedDepVersions": {
+        "TonsOfSmallSassFilesViaNodeSass": {
+          "static": {
+            "TonsOfSmallSassFilesViaNodeSass": "static"
+          }
+        }
+      }
+    }
+  },
+  "allDependencies": {
+  }
+}

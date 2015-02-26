@@ -1,0 +1,11 @@
+@import shared
+
+
+
+=some-mixin1
+  border: 1px solid mix(red, white, 1%)
+
+body .thing1
+  +some-mixin1
+  color: $var1
+
