@@ -8,12 +8,23 @@ module.exports = (project, options, projectDependencyDirs, archiveDependencyDirs
 
   projectTree = pickStaticDirectory(project, options)
 
-  new compileCompass projectTree,
+  projectTreeWrapped =
+    read: (readTree) ->
+
+      fileToCheck = "#{project.name}/#{project.version}/sass/test1.sass"
+      depTree = options.dependencyCache.dependencyTreeForFile(fileToCheck)
+      console.log "dep tree for #{fileToCheck}:"
+      depTree.debugPrint (n) -> n.relativePath
+
+      readTree(projectTree).then (dir) -> dir
+
+  new compileCompass projectTreeWrapped,
     dependencyCache: options.dependencyCache
     loadPaths: []
 
     command:
-      sassDir: "."
-      cssDir: "."
+      # Not needed, I think?
+      # sassDir: "."
+      # cssDir: "."
 
       importPath: [ options.benderContext.archivePath ]
