@@ -1,6 +1,6 @@
 {
   "name": "TonsOfSmallSassFilesViaNodeSass",
   "dependencies": {
-    "broccoli-sass": "hipertracker/broccoli-sass.git#f79936cca1263621da225d18da7f2078d82a9bb5"
+    "broccoli-sass": "hipertracker/broccoli-sass#f79936cca1263621da225d18da7f2078d82a9bb5"
   }
 }
